@@ -1,6 +1,6 @@
 {
   "name": "passport-linkedin-token",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "LinkedIn token authentication strategy for Passport.",
   "author": {
     "name": "Ningsuhen Waikhom",
@@ -16,6 +16,7 @@
   },
   "main": "./lib/passport-linkedin-token",
   "dependencies": {
+    "pkginfo": "0.2.x",
     "passport-oauth": "0.1.x"
   },
   "engines": {
@@ -37,6 +38,6 @@
   ],
   "readmeFilename": "README.md",
   "homepage": "https://github.com/ningsuhen/passport-linkedin-token",
-  "_id": "passport-linkedin-token@0.1.0",
-  "_from": "passport-linkedin-token@^0.1.0"
+  "_id": "passport-linkedin-token@0.1.1",
+  "_from": "passport-linkedin-token@^0.1.1"
 }
