@@ -31,7 +31,8 @@ LinkedIn's [developer](https://dev.linkedin.com/) site.
 ```javascript
 passport.use(new LinkedInTokenStrategy({
     consumerKey: LINKEDIN_CONSUMER_KEY,
-    consumerSecret: LINKEDIN_CONSUMER_SECRET
+    consumerSecret: LINKEDIN_CONSUMER_SECRET,
+    profileFields: ['id', 'name', 'public-profile-url', 'emails', 'picture-url'] // optional (default: 'id', 'name', 'public-profile-url')
   },
   function(token, tokenSecret, profile, done) {
     User.findOrCreate({ linkedinId: profile.id }, function (err, user) {
